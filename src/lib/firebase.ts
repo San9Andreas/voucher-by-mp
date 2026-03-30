@@ -10,23 +10,22 @@ import { getAuth, GoogleAuthProvider, type Auth } from 'firebase/auth';
 //  in the project root with the following variables from your
 //  Firebase Console:
 //
-//  VITE_FIREBASE_API_KEY=AIzaSyDVqwqFFIIxieoVjkqbxRkJ7p_sFKBS0gc
-//  VITE_FIREBASE_AUTH_DOMAIN=my-voucher-app-97e9a.firebaseapp.com
-//  VITE_FIREBASE_PROJECT_ID=my-voucher-app-97e9a
-//  VITE_FIREBASE_STORAGE_BUCKET=my-voucher-app-97e9a.firebasestorage.app
-//  VITE_FIREBASE_MESSAGING_SENDER_ID=289310087199
-//  VITE_FIREBASE_APP_ID=1:289310087199:web:67b1b60908a2538e169d2a
-//
+//  VITE_FIREBASE_API_KEY=AIzaSyAKT7FxlX54wCBQPxecFv7VyEepezR1zYU
+//  VITE_FIREBASE_AUTH_DOMAIN=mp-sport-app.firebaseapp.com
+//  VITE_FIREBASE_PROJECT_ID=mp-sport-app
+//  VITE_FIREBASE_STORAGE_BUCKET=mp-sport-app.firebasestorage.app
+//  VITE_FIREBASE_MESSAGING_SENDER_ID=255713685153
+//  VITE_FIREBASE_APP_ID=1:255713685153:web:6375ed04ff20eeedf24ae0
 //  Or replace the values directly below.
 // ============================================================
 
 const firebaseConfig = {
-  apiKey: (import.meta as any).env?.VITE_FIREBASE_API_KEY || 'AIzaSyDVqwqFFIIxieoVjkqbxRkJ7p_sFKBS0gc',
-  authDomain: (import.meta as any).env?.VITE_FIREBASE_AUTH_DOMAIN || 'my-voucher-app-97e9a.firebaseapp.com',
-  projectId: (import.meta as any).env?.VITE_FIREBASE_PROJECT_ID || 'my-voucher-app-97e9a',
-  storageBucket: (import.meta as any).env?.VITE_FIREBASE_STORAGE_BUCKET || 'my-voucher-app-97e9a.firebasestorage.app',
-  messagingSenderId: (import.meta as any).env?.VITE_FIREBASE_MESSAGING_SENDER_ID || '289310087199',
-  appId: (import.meta as any).env?.VITE_FIREBASE_APP_ID || '1:289310087199:web:67b1b60908a2538e169d2a',
+  apiKey: (import.meta as any).env?.VITE_FIREBASE_API_KEY || 'AIzaSyAKT7FxlX54wCBQPxecFv7VyEepezR1zYU',
+  authDomain: (import.meta as any).env?.VITE_FIREBASE_AUTH_DOMAIN || 'mp-sport-app.firebaseapp.com',
+  projectId: (import.meta as any).env?.VITE_FIREBASE_PROJECT_ID || 'mp-sport-app',
+  storageBucket: (import.meta as any).env?.VITE_FIREBASE_STORAGE_BUCKET || 'mp-sport-app.firebasestorage.app',
+  messagingSenderId: (import.meta as any).env?.VITE_FIREBASE_MESSAGING_SENDER_ID || '255713685153',
+  appId: (import.meta as any).env?.VITE_FIREBASE_APP_ID || '1:255713685153:web:6375ed04ff20eeedf24ae0',
 };
 
 let app: FirebaseApp | null = null;
